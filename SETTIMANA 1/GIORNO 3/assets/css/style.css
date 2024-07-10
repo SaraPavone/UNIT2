@@ -1,9 +1,66 @@
 * {
     color: #732104;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/* NAV BAR */
 
+/* NAV BAR */
+nav {
+    background-color: #FEF7E2;
+    border: 1px solid transparent;
+    border-radius: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px;
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.shop span {
+    margin-right: 20px;
+}
+
+
+span img {
+    width: 40px;
+}
+
+
+.btn {
+    min-width: 43%;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav div {
+    background-color: #FFDF7F;
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+}
 
 
 /* PRODUCT CARD */
@@ -16,6 +73,7 @@
     border: 1px solid transparent;
     border-radius: 50px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .caption {
@@ -35,6 +93,7 @@ h3 {
     font-size: 0.7rem;
     margin-top: 3px;
 }
+
 .text {
     flex-grow: 6;
 }
@@ -44,7 +103,7 @@ h3 {
     flex-grow: 4;
 }
 
-.containerButton{
+.containerButton {
     display: flex;
     justify-content: center;
     background-color: #FEF7E2;
@@ -55,8 +114,32 @@ button {
     height: 30px;
     margin-bottom: 10px;
     border-radius: 20px;
-    background-color:#FFDF7F;
+    background-color: #FFDF7F;
     border: 1px solid transparent;
     font-size: 0.7rem;
     font-weight: bold;
+}
+
+/* ARTICLE */
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+}
+
+.containerArticle {
+    background-color: #FEF7E2;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+h4 {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
