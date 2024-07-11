@@ -1,0 +1,86 @@
+.container {
+    min-width: 1200px;
+    min-height: 500px;
+    font-family: indie flower;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #666666;
+    padding: 5%;
+}
+
+.postIt {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.92);
+    animation: myAnim 5s linear 0s 1 normal backwards;
+
+}
+
+@keyframes myAnim {
+    0% {
+        transform: scale(100);
+       
+        opacity: 0;
+    }
+
+    25% {
+        transform: scale(75);
+        
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: scale(50);
+        
+        opacity: 0.50;
+    }
+
+    75% {
+        transform: scale(25);
+      
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: scale(1);
+        
+        opacity: 1;
+    }
+}
+
+.postIt:hover {
+    transform: rotate(0);
+    transform: scale(1.2);
+    box-shadow: 11px 11px 15px 5px #000000;
+}
+
+.postIt h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.postIt p {
+    font-size: 2rem;
+
+}
+
+.yellow {
+    background-color: #FDFDCB;
+    transform: rotate(355deg);
+}
+
+.green {
+    background-color: #CCFECE;
+    transform: rotate(8deg);
+}
+
+.blue {
+    background-color: #CACAFA;
+    transform: rotate(348deg);
+}
