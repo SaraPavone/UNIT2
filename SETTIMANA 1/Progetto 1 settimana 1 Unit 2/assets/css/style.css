@@ -1,8 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: "Roboto", sans-serif;
-   
+
 }
 
 /*NAV BAR*/
@@ -13,23 +11,27 @@ header nav {
     border-bottom: 1px solid black;
     display: flex;
     align-items: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
     position: fixed;
 }
 
 
-.containerLogo  {
-    flex-basis: 60%; 
+.containerLogo {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.containerLogo img {
+    padding-left: 7vw;
 }
 
 .containerElements {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     font-size: 0.8rem;
     flex-grow: 1;
+    padding-right: 7vw;
 }
 
 .navElement {
@@ -48,15 +50,118 @@ header nav {
 
 /*BANNER*/
 .banner {
-    padding-top:75px;
+    padding-top: 75px;
     width: 100%;
     height: 60vh;
     background-color: #ffc017;
     border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    padding-left: 7vw;
 }
 
 h1 {
     font-family: "Spectral", serif;
     font-size: 7rem;
     font-weight: 400;
+}
+
+.banner p {
+    font-size: 1.3rem;
+    width: 25%;
+}
+
+.containerBtnStart button {
+    color: white;
+    background-color: black;
+    height: 35px;
+    border-radius: 25px;
+    width: 150px;
+    font-size: 0.9rem;
+}
+
+/*SEZIONE*/
+
+.titleSection {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 7vw;
+    margin-bottom: 10px;
+}
+
+.titleSection img {
+    width: 20px;
+}
+
+.titleSection h2 {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.containerSubSection {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7vw;
+    align-content: space-evenly;
+}
+
+.subSection {
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 20px;
+   
+}
+
+.number {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.294);
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.text img {
+    border-radius: 50%;
+    width: 25px;
+}
+
+.text div {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h5 {
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 0.6rem;
+    color: rgba(128, 128, 128, 0.759);
+}
+
+
+
+
+.gray {
+    font-size: 0.7rem;
+    color: rgba(128, 128, 128, 0.759);
 }
