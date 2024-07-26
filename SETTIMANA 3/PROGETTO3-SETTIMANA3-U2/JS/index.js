@@ -14,31 +14,31 @@ const getConfetti = function () {
                 throw new Error('ERRORE CHIAMATA')
             }
         })
-        .then((arrayConfetti) => {
-            console.log('Dolcetti disponibili:', arrayConfetti)
+        .then((arrayProduct) => {
+            console.log('Dolcetti disponibili:', arrayProduct)
 
 
-        // //     arrayConfetti.forEach((confetto) => {
-        //         const confettiCol =
-        //             <div class="col">
-        //                 <div class="card">
-        //                     <img
-        //                         src="${}"
-        //                         class="card-img-top"
-        //                         alt="product" />
+            arrayProduct.forEach((product) => {
+                const newConfettiCol =`
+                    <div class="col">
+                        <div class="card">
+                            <img
+                                src="https://www.arisbar.it/wp-content/uploads/2019/05/Arisbar-confetti-colorati.jpg}"
+                                class="card-img-top"
+                                alt="product" />
 
-        //                     <div class="card-body">
-        //                         <h5 class="card-title">${confetto.title}</h5>
-        //                         <p class="card-text">
-        //                             ${ }</p>
-        //                             <a href="#" class="btn btn-primary">Go somewhere</a>
-        //                     </div>
-        //                 </div>
-        //             </div>
-
-        //         const row = document.getElementById('candy-row')
-        //         row.innerHTML = row.innerHTML + candycol
-        //     })
+                            <div class="card-body">
+                                <h5 class="card-title">${product.title}</h5>
+                                <p class="card-text">
+                                    ${product.description}</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                    const confettiRow = document.getElementById('candy-row');
+                    confettiRow.innerHTML = confettiRow.innerHTML + newConfettiCol;
+            })
         })
 
         .catch((err) => {
